@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Navbar } from './navbar/navbar';
+import { FooterComponent } from './footer/footer';
+import { LoginSectionComponent } from './login-section/login-section';
+
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [Navbar, FooterComponent, LoginSectionComponent],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('drive-medical-header');
 }

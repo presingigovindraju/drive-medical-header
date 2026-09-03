@@ -1,0 +1,227 @@
+<div class="login-page">
+
+  <!-- =====================================================
+       BREADCRUMB
+  ====================================================== -->
+
+  <div class="breadcrumb">
+
+    <a href="/">
+      home
+    </a>
+
+    <span>/</span>
+
+    <span class="current-page">
+      sign in
+    </span>
+
+  </div>
+
+
+  <!-- =====================================================
+       LOGIN CONTENT
+  ====================================================== -->
+
+  <div class="login-container">
+
+
+    <!-- ===================================================
+         LEFT SIDE - LOGIN FORM
+    ==================================================== -->
+
+    <section class="login-form-section">
+
+      <!-- Heading -->
+
+      <div class="login-heading-row">
+
+        <h1>
+          Sign In
+        </h1>
+
+        <span class="required-fields">
+          * Required Fields
+        </span>
+
+      </div>
+
+
+      <!-- =================================================
+           EMAIL
+      ================================================== -->
+
+      <div class="form-group">
+
+        <label for="email">
+
+          <span class="required">*</span>
+          Email Address
+
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          autocomplete="email"
+        >
+
+      </div>
+
+
+      <!-- =================================================
+           PASSWORD
+      ================================================== -->
+
+      <div class="form-group">
+
+        <label for="password">
+
+          <span class="required">*</span>
+          Password
+
+        </label>
+
+        <input
+          id="password"
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          autocomplete="current-password"
+        >
+
+      </div>
+
+
+      <!-- =================================================
+           SIGN IN BUTTON
+      ================================================== -->
+
+      <div class="sign-in-button-wrapper">
+
+        <button
+          type="button"
+          class="sign-in-button"
+          (click)="signIn()">
+
+          SIGN IN
+
+        </button>
+
+      </div>
+
+
+      <!-- =================================================
+           FORGOT PASSWORD
+      ================================================== -->
+
+      <div class="forgot-password">
+
+        <a href="#">
+          Forgot your password?
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         RIGHT SIDE
+    ==================================================== -->
+
+    <section class="account-section">
+
+
+      <!-- =================================================
+           NEW CUSTOMER
+      ================================================== -->
+
+      <div class="new-customer">
+
+        <h2>
+          Interested in creating an account with
+          <br>
+          Drive?
+        </h2>
+
+
+        <p>
+          For our business partners, you can register to get
+          access to B2B Ordering, where you can place orders,
+          check status of orders and create quotes.
+        </p>
+
+
+        <h3>
+          New Customers
+        </h3>
+
+
+        <button
+          type="button"
+          class="outline-button"
+          (click)="applyForAccount()">
+
+          APPLY FOR AN ACCOUNT
+
+        </button>
+
+      </div>
+
+
+
+      <!-- =================================================
+           EXISTING CUSTOMER
+      ================================================== -->
+
+      <div class="existing-customer">
+
+        <h3>
+          Existing Customers
+        </h3>
+
+
+        <button
+          type="button"
+          class="outline-button"
+          (click)="requestAccess()">
+
+          REQUEST ACCESS
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         PURCHASE DRIVE PRODUCT
+    ==================================================== -->
+
+    <section class="purchase-section">
+
+      <h2>
+        Interested in Purchasing a Drive Product?
+      </h2>
+
+
+      <a
+        href="https://www.drivemedical.com/locate-provider"
+        class="locate-provider">
+
+        Locate Provider
+
+      </a>
+
+    </section>
+
+
+  </div>
+
+</div>

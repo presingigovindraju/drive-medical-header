@@ -1,0 +1,704 @@
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.login-page {
+  width: 100%;
+  background: #ffffff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #26384c;
+  box-sizing: border-box;
+}
+
+.login-page *,
+.login-page *::before,
+.login-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+  width: 100%;
+  max-width: 1355px;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 13px;
+
+  box-sizing: border-box;
+}
+
+.breadcrumb a {
+  color: #12396e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #c5c5c5;
+}
+
+.breadcrumb .current-page {
+  color: #999999;
+  font-weight: 300;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.login-container {
+  width: 100%;
+  max-width: 1355px;
+
+  margin: 30px auto 25px;
+
+  display: grid;
+
+  grid-template-columns: 613px 1fr;
+  column-gap: 40px;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LOGIN FORM SECTION
+========================================================= */
+
+.login-form-section {
+  width: 100%;
+  padding-top: 22px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LOGIN HEADING
+========================================================= */
+
+.login-heading-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 42px;
+}
+
+.login-heading-row h1 {
+  margin: 0;
+
+  font-size: 32px;
+  line-height: 1.2;
+
+  color: #2c3d50;
+
+  font-weight: 700;
+}
+
+.required-fields {
+  color: #e4002b;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  color: #35465a;
+
+  font-weight: 400;
+}
+
+.required {
+  color: #e4002b;
+
+  font-size: 16px;
+
+  margin-right: 2px;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form-group input {
+  width: 100%;
+  height: 70px;
+
+  padding: 0 13px;
+
+  border: 1px solid #c9c9c9;
+
+  border-radius: 0;
+
+  background: #ffffff;
+
+  outline: none;
+
+  color: #31445a;
+
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  font-size: 14px;
+
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #3f8997;
+  outline: none;
+}
+
+.form-group input[type="password"] {
+  /* background: #e7eefb; */
+}
+
+
+/* =========================================================
+   SIGN IN BUTTON
+========================================================= */
+
+.sign-in-button-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 34px;
+}
+
+.sign-in-button {
+  width: 250px;
+  height: 60px;
+
+  border: none;
+
+  background: #3f8997;
+
+  color: #ffffff;
+
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #347a87;
+}
+
+
+/* =========================================================
+   FORGOT PASSWORD
+========================================================= */
+
+.forgot-password {
+  width: 100%;
+
+  text-align: center;
+
+  margin-top: 35px;
+}
+
+.forgot-password a {
+  color: #34548b;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   RIGHT ACCOUNT SECTION
+========================================================= */
+
+.account-section {
+  width: 100%;
+
+  border: 1px solid #a8a8a8;
+
+  margin-top: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   NEW CUSTOMER
+========================================================= */
+
+.new-customer {
+  min-height: 367px;
+
+  background: #f4f3ec;
+
+  padding: 42px 30px 35px;
+
+  box-sizing: border-box;
+
+  text-align: left;
+}
+
+.new-customer h2 {
+  margin: 0 0 22px;
+
+  color: #26384c;
+
+  font-size: 25px;
+
+  line-height: 1.4;
+
+  font-weight: 700;
+}
+
+.new-customer p {
+  margin: 0;
+
+  color: #405166;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+
+  font-weight: 400;
+
+  max-width: 510px;
+}
+
+.new-customer h3 {
+  margin: 35px 0 27px;
+
+  text-align: center;
+
+  color: #26384c;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   APPLY FOR AN ACCOUNT BUTTON
+   CENTERED
+========================================================= */
+
+.new-customer .outline-button {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   EXISTING CUSTOMER
+========================================================= */
+
+.existing-customer {
+  min-height: 188px;
+
+  background: #ffffff;
+
+  border-top: 1px solid #a8a8a8;
+
+  padding: 34px 30px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.existing-customer h3 {
+  margin: 0 0 27px;
+
+  color: #26384c;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.outline-button {
+  width: 320px;
+
+  max-width: 100%;
+
+  height: 58px;
+
+  display: block;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border: 2px solid #3f8997;
+
+  color: #3f8997;
+
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.outline-button:hover {
+  background: #3f8997;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   PURCHASE SECTION
+========================================================= */
+
+.purchase-section {
+  grid-column: 2;
+
+  margin-top: 29px;
+
+  /* Desktop bottom spacing */
+  margin-bottom: 25px;
+
+  padding-left: 30px;
+
+  box-sizing: border-box;
+}
+
+.purchase-section h2 {
+  margin: 0 0 14px;
+
+  color: #26384c;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+.locate-provider {
+  display: inline-block;
+
+  color: #4b82a4;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  text-decoration: none;
+}
+
+.locate-provider:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   1400px
+========================================================= */
+
+@media (max-width: 1400px) {
+
+  .breadcrumb {
+    max-width: 1100px;
+  }
+
+  .login-container {
+    max-width: 1100px;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 40px;
+  }
+
+}
+
+
+/* =========================================================
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .breadcrumb {
+    max-width: 900px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .login-container {
+    max-width: 900px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 30px;
+  }
+
+  .new-customer h2 {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .breadcrumb {
+    max-width: 650px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .login-container {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    row-gap: 40px;
+  }
+
+  .login-form-section {
+    grid-column: 1;
+  }
+
+  .account-section {
+    grid-column: 1;
+  }
+
+  .purchase-section {
+    grid-column: 1;
+
+    padding-left: 0;
+
+    margin-top: 0;
+
+    margin-bottom: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .breadcrumb {
+    width: auto;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding: 10px 0 0;
+
+    font-size: 12px;
+  }
+
+  .login-container {
+    width: auto;
+
+    margin: 25px 20px 20px;
+
+    padding: 0;
+  }
+
+  .login-heading-row {
+    margin-bottom: 30px;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .login-heading-row h1 {
+    font-size: 28px;
+  }
+
+  .required-fields {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    height: 60px;
+  }
+
+  .sign-in-button {
+    width: 250px;
+
+    max-width: 100%;
+  }
+
+  .new-customer {
+    min-height: auto;
+
+    padding: 30px 20px;
+  }
+
+  .new-customer h2 {
+    font-size: 21px;
+  }
+
+  .new-customer p {
+    font-size: 13px;
+  }
+
+  .existing-customer {
+    min-height: auto;
+
+    padding: 30px 20px;
+  }
+
+  .outline-button {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .purchase-section {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .breadcrumb {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .login-container {
+    margin-left: 15px;
+    margin-right: 15px;
+
+    margin-bottom: 15px;
+  }
+
+  .login-heading-row h1 {
+    font-size: 25px;
+  }
+
+  .form-group input {
+    height: 55px;
+  }
+
+  .sign-in-button {
+    height: 55px;
+
+    font-size: 13px;
+  }
+
+  .new-customer h2 {
+    font-size: 19px;
+  }
+
+  .new-customer h3,
+  .existing-customer h3 {
+    font-size: 17px;
+  }
+
+  .purchase-section h2 {
+    font-size: 17px;
+  }
+
+  .purchase-section {
+    margin-bottom: 15px;
+  }
+
+  .outline-button {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
