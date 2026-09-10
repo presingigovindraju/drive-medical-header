@@ -43,9 +43,10 @@
 }
 
 .breadcrumb a {
-  color: #12396e;
+  color: rgb(31, 53, 94);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .breadcrumb a:hover {
@@ -54,6 +55,7 @@
 
 .breadcrumb span {
   color: #c5c5c5;
+  font-size: 13px;
 }
 
 .breadcrumb .current-page {
@@ -67,14 +69,14 @@
 ========================================================= */
 
 .login-container {
-  width: 100%;
+  width: 70%;
   max-width: 1355px;
 
   margin: 30px auto 25px;
 
   display: grid;
 
-  grid-template-columns: 613px 1fr;
+  grid-template-columns: 1fr 0.9fr;
   column-gap: 40px;
 
   position: relative;
@@ -114,7 +116,7 @@
   font-size: 32px;
   line-height: 1.2;
 
-  color: #2c3d50;
+  color: #4a4a4a;
 
   font-weight: 700;
 }
@@ -166,27 +168,20 @@
 .form-group input {
   width: 100%;
   height: 70px;
-
   padding: 0 13px;
-
   border: 1px solid #c9c9c9;
-
   border-radius: 0;
-
-  background: #ffffff;
-
+  background: #fff;
   outline: none;
-
   color: #31445a;
-
   font-family: 'Montserrat', Arial, sans-serif;
-
   font-size: 14px;
-
   box-sizing: border-box;
 }
 
+/* Background color when customer clicks/types in the field */
 .form-group input:focus {
+  background-color: #e8f0fe;
   border-color: #3f8997;
   outline: none;
 }
@@ -215,7 +210,7 @@
 
   border: none;
 
-  background: #3f8997;
+  background: #3e818a;
 
   color: #ffffff;
 
@@ -233,7 +228,7 @@
 }
 
 .sign-in-button:hover {
-  background-color: #347a87;
+  background-color: #1f355e;
 }
 
 
@@ -250,7 +245,7 @@
 }
 
 .forgot-password a {
-  color: #34548b;
+  color: #3e818a;
 
   font-size: 14px;
 
@@ -298,7 +293,7 @@
 .new-customer h2 {
   margin: 0 0 22px;
 
-  color: #26384c;
+  color: #3c3c3c;
 
   font-size: 25px;
 
@@ -310,7 +305,7 @@
 .new-customer p {
   margin: 0;
 
-  color: #405166;
+  color: #3c3c3c;
 
   font-size: 14px;
 
@@ -326,7 +321,7 @@
 
   text-align: center;
 
-  color: #26384c;
+  color: #3c3c3c;
 
   font-size: 19px;
 
@@ -368,7 +363,7 @@
 .existing-customer h3 {
   margin: 0 0 27px;
 
-  color: #26384c;
+  color: #3c3c3c;
 
   font-size: 19px;
 
@@ -393,7 +388,7 @@
 
   background: #ffffff;
 
-  border: 2px solid #3f8997;
+  border: 2px solid #3e818a;
 
   color: #3f8997;
 
@@ -411,7 +406,7 @@
 }
 
 .outline-button:hover {
-  background: #3f8997;
+  background: #3e818a;
 
   color: #ffffff;
 }
@@ -437,7 +432,7 @@
 .purchase-section h2 {
   margin: 0 0 14px;
 
-  color: #26384c;
+  color: #3c3c3c;
 
   font-size: 19px;
 
@@ -584,21 +579,24 @@
   }
 
   .login-heading-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
     margin-bottom: 30px;
-
-    align-items: flex-start;
-
-    flex-direction: column;
-
     gap: 10px;
   }
 
   .login-heading-row h1 {
     font-size: 28px;
+    margin: 0;
   }
 
   .required-fields {
     font-size: 12px;
+    white-space: nowrap;
   }
 
   .form-group input {
@@ -662,10 +660,24 @@
 
     margin-bottom: 15px;
   }
+   .login-heading-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
 
   .login-heading-row h1 {
     font-size: 25px;
   }
+
+  .required-fields {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  /* .login-heading-row h1 {
+    font-size: 25px;
+  } */
 
   .form-group input {
     height: 55px;
